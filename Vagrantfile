@@ -5,8 +5,7 @@ unless Vagrant.has_plugin?("vagrant-vbguest")
 Run the following command:
   vagrant plugin install vagrant-vbguest"
 end
-# SCRIPT_PATH="https://raw.githubusercontent.com/gitphill/shell/master/"
-SCRIPT_PATH = "../../../shell/"
+SCRIPT_PATH="https://raw.githubusercontent.com/gitphill/shell/master/"
 Vagrant.configure(2) do |config|
   config.vm.box = "ubuntu/trusty64"
   config.vm.hostname = "spark.dev"
