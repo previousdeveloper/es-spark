@@ -1,0 +1,9 @@
+version: '2'
+services:
+
+  es:
+    image: pgarrett/elastic
+    container_name: es
+    ports:
+     - "9200:9200"
+     - "9300:9300"
